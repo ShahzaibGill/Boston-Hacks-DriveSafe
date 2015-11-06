@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="thinkinstinct.bostonhacks" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Unlock"
+            android:label="@string/title_activity_unlock_screen" >
+        </activity>
+        <activity
+            android:name=".drunk_options"
+            android:label="@string/title_activity_drunk_options" >
+        </activity>
+        <activity
+            android:name=".UnlockSuccessful"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_unlock_successful"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name=".unlocked"
+            android:label="@string/title_activity_unlocked" >
+        </activity>
+    </application>
+
+</manifest>
